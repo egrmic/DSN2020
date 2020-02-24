@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ALATI</string>
+    <string name="REST_URL">https://oziz.ffos.hr/DSN2020/</string>
+    <string name="labelaSifra">Šifra</string>
+    <string name="labelaIme">Ime</string>
+    <string name="labelaPrezime">Prezime</string>
+    <string name="labelaNazad">Nazad</string>
+    <string name="labelaSlika">Slika osobe</string>
+    <string name="labelaNovi">Kreiraj novu osobu</string>
+    <string name="labelaPromjeni">Promjeni osobu</string>
+    <string name="labelaObrisi">Obriši osobu</string>
+</resources>
