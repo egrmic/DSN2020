@@ -15,7 +15,24 @@ Flight::route('GET /osobe', function(){
     $repozitorij = $em->getRepository('Jakopec\Osoba');
     $osobe = $repozitorij->findAll();
 
-    echo $doctrineBoostrap->getJson($osobe);
+    $prebaceno=[];
+    foreach($osobe as $osoba){
+        $imeDatoteke = "000000" . $osoba->getSifra();
+        $o=new stdClass();
+        $o->id=$osoba->getSifra();
+        $o->ime=$osoba->getIme();
+        $o->prezime=$osoba->getPrezime();
+        $o->urlSlika="https://oziz.ffos.hr/DSN2020/img/" . substr($imeDatoteke , strlen($imeDatoteke)-6) . ".jpg";
+        $prebaceno[]=$o;
+    }
+
+
+    $odgovor = new stdClass();
+    $odgovor->greska=false;
+    $odgovor->osobe = $prebaceno;
+
+    Flight::json($odgovor);
+
 
 });
 

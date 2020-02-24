@@ -80,7 +80,7 @@ public class CUDActivity extends AppCompatActivity {
 
     }
 
-    //2 sat
+
     private void novaosoba() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(getString(R.string.REST_URL))
@@ -107,7 +107,7 @@ public class CUDActivity extends AppCompatActivity {
         });
     }
 
-    //2 sat
+
     private void promjenaOsoba() {
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -135,7 +135,6 @@ public class CUDActivity extends AppCompatActivity {
         });
     }
 
-    //2 sat
     private void obrisiOsoba() {
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -161,7 +160,6 @@ public class CUDActivity extends AppCompatActivity {
     }
 
 
-    //2 sat
     private void nazad(boolean ok){
         setResult(ok ? MainActivity.OK : MainActivity.GRESKA, null);
         finish();

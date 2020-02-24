@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements AdapterListe.Item
 
     AdapterListe adapter;
 
-// drugi sat
 
     public static final int CUD=1;
     public static final int OK=2;
@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements AdapterListe.Item
         recyclerView.setAdapter(adapter);
     }
 
-    //2 sat
     @OnClick(R.id.dodajNovi)
     public void kreirajNovi() {
         Intent intent = new Intent(
@@ -77,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements AdapterListe.Item
         call.enqueue(new Callback<Odgovor>() {
             @Override
             public void onResponse(Call<Odgovor> call, Response<Odgovor> response) {
+                if(response.body()==null){
+                    return;
+                }
+
                 adapter.setPodaci(response.body().getOsobe());
                 adapter.notifyDataSetChanged();
             }
@@ -85,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements AdapterListe.Item
             public void onFailure(Call<Odgovor> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "Nešto nije u redu",
                         Toast.LENGTH_LONG).show();
+                Log.wtf("Greška", t.getMessage());
             }
         });
     }
@@ -93,14 +97,6 @@ public class MainActivity extends AppCompatActivity implements AdapterListe.Item
     public void onItemClick(View view, int position) {
         Osoba osoba = adapter.getItem(position);
 
-        /*
-        Intent intent = new Intent(
-                this,DetaljiActivity.class);
-        intent.putExtra("osoba",osoba);
-        startActivity(intent);
-        */
-
-        //2 sat
         Intent intent = new Intent(
                 this,CUDActivity.class);
         intent.putExtra("osoba",osoba);
@@ -108,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements AdapterListe.Item
     }
 
 
-    //2 sat
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
