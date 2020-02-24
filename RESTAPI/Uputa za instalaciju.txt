@@ -1,0 +1,5 @@
+Instalirati composer
+https://getcomposer.org/download/
+
+cd $rootprojekta
+izvesti naredbe

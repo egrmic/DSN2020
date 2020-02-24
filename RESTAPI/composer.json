@@ -1,0 +1,22 @@
+{
+    "name": "jakopec-php/dsn2020",
+    "description": "Primjer kreiranja REST API za potrebe predavanja na danima strukovnih nastavnika 2020.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Tomislav Jakopec",
+            "email": "tjakopec@ffos.hr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jakopec\\": "src/Jakopec"
+        }
+    },
+    "require": {
+        "mikecao/flight": "^1.3",
+        "doctrine/orm": "*",
+        "symfony/serializer" : "*",
+        "symfony/property-access": "*"
+    }
+}
