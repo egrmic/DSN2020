@@ -9,15 +9,16 @@ Razvoj mobilnih aplikacija moguće je na nekoliko načina [4]. Razvojem aplikaci
 Lepeza dostupnih rješenja je zbilja široka. Za potrebe predavanja daje se prikaz mrežne infrastrukture s prikazom najbolje prakse pri realizaciji REST API[5] sučelja. Prikazati će se korištenje HTTP metoda GET, PUT, POST i DELETE koje odgovaraju uobičajenim aktivnostima rada s podacima: čitanje, kreiranje, primjena i brisanje (eng. CRUD). na primjeru entiteta Osoba koji ima tri svojstva. U dijelu razvoja mobilnih aplikacija daje se osnovi pregled Android ekosustava koristeći Java programski jezik u razvojnom alatu Android studio. Upoznaje se s upraviteljem zavisnosti Gradle te daje popis korisnih alata prilikom razvoja i način kako se ti alati implementiraju u projekt. Prikazani alati u formi implementacije biblioteka koda su: Lombok, Butter Knife, Retrofit, Picasso i Room. Na primjeru mogućnosti pregleda, kreiranja, promjene i brisanja podataka entiteta Osoba prikazuje se implementacija dvaju dominantnih arhitekturalnih predložaka dizajna Model View Presenter (MVP) i Model View View Model (MVVM). Iako je tradicionalni predložak dizajna u Java programskom jeziku Model View Controller (MVC), on se pokazao manjkavim u razvoju Android aplikacija upravo zbog specifičnosti okruženja, potrebe za asinkronim načinom rada i ograničenjima koje osnovni koncepti Android razvoja (životni vijek Activity instance i dr.) donose. MVP se pokazao dao dobra evolucija, međutim zbog kompleksnije implementacije, Google se ipak odlučio implementirati MVVM za koji se predlaže razvoj aplikacija danas.  
 # Ishodi predavanja
 Ishod su mobilne aplikacije jednake funkcionalnosti s implementacijom različitih predložaka dizajna. Na repozitoriju otvorenog koda (github) dostupni su projekti:
-1. [Mrežna aplikacija koja omogućuje REST API koristeći PHP kao programski jezik dok je pohrana podataka u MariaDB bazi podataka] (https://github.com/tjakopec/DSN2020/tree/master/RESTAPI) 
-2. [Android aplikacija Osnovni pregled Android ekosustava s korištenje alata] (https://github.com/tjakopec/DSN2020/tree/master/ALATI)
-3. [Android aplikacija CRUD MVP] (https://github.com/tjakopec/DSN2020/tree/master/MVPCRUD)
-4. [Android aplikacija CRUD MVVM] (https://github.com/tjakopec/DSN2020/tree/master/MVVMCRUD)
+[Mrežna aplikacija koja omogućuje REST API koristeći PHP kao programski jezik dok je pohrana podataka u MariaDB bazi podataka] (https://github.com/tjakopec/DSN2020/tree/master/RESTAPI) 
+[Android aplikacija Osnovni pregled Android ekosustava s korištenje alata] (https://github.com/tjakopec/DSN2020/tree/master/ALATI)
+[Android aplikacija CRUD MVP] (https://github.com/tjakopec/DSN2020/tree/master/MVPCRUD)
+[Android aplikacija CRUD MVVM] (https://github.com/tjakopec/DSN2020/tree/master/MVVMCRUD)
 
-1. [https://www.bankmycell.com/blog/how-many-phones-are-in-the-world](https://www.bankmycell.com/blog/how-many-phones-are-in-the-world)\
-2. [https://gs.statcounter.com/os-market-share/mobile/worldwide](https://gs.statcounter.com/os-market-share/mobile/worldwide)\
-3. [https://deviceatlas.com/blog/android-v-ios-market-share](https://deviceatlas.com/blog/android-v-ios-market-share)\
-4. [https://www.upwork.com/hiring/mobile/should-you-build-a-hybrid-mobile-app/](https://www.upwork.com/hiring/mobile/should-you-build-a-hybrid-mobile-app/)\
-5. [https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/](https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/)\
+# Korisni izvori
+[https://www.bankmycell.com/blog/how-many-phones-are-in-the-world](https://www.bankmycell.com/blog/how-many-phones-are-in-the-world)\
+[https://gs.statcounter.com/os-market-share/mobile/worldwide](https://gs.statcounter.com/os-market-share/mobile/worldwide)\
+[https://deviceatlas.com/blog/android-v-ios-market-share](https://deviceatlas.com/blog/android-v-ios-market-share)\
+[https://www.upwork.com/hiring/mobile/should-you-build-a-hybrid-mobile-app/](https://www.upwork.com/hiring/mobile/should-you-build-a-hybrid-mobile-app/)\
+[https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/](https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/)\
 
 Predavač: Tomislav Jakopec radi kao docent na Odsjeku za informacijske znanosti pri Filozofskom fakultetu Osijek. Voditelj je Dvopredmetnog diplomskog studija informacijske tehnologije. Nositelj je kolegija vezanih uz informacijske tehnologije u društvenom području. Kao vanjski suradnik izvodi nastavu na Stručnom studiju informacijskih tehnologija na Odjelu za informacijske znanosti pri Sveučilištu u Zadru na kolegiju Razvoj mobilnih aplikacija. Veliki je zaljubljenik u informacijske tehnologije općenito.
