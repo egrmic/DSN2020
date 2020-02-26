@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 
 public interface OsobeRESTSucelje {
 
-    @GET("osobe?kljuc=tjakopec")
+    @GET("osobe")
     Call<Odgovor> dohvatiOsobe();
 
     @POST("osobe")
