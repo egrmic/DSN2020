@@ -8,8 +8,8 @@ composer install
 
 
 ## Instalacija na windows
-Instalirati https://www.apachefriends.org/xampp-files/7.4.2/xampp-windows-x64-7.4.2-0-VC15-installer.exe
-Uz pretpostavku da je xampp na c:\ disku
+Instalirati https://www.apachefriends.org/xampp-files/7.4.2/xampp-windows-x64-7.4.2-0-VC15-installer.exe\
+Uz pretpostavku da je xampp na c:\ disku\
 pokrenuti program c:\xampp\xampp-control.exe te startati Apache i Mysql
 
 RESTAPI direktorij kopirati u c:\xampp\htdocs
