@@ -10,6 +10,7 @@ Lepeza dostupnih rješenja je zbilja široka. Za potrebe predavanja daje se prik
 # Ishodi predavanja
 Ishod su mobilne aplikacije jednake funkcionalnosti s implementacijom različitih predložaka dizajna. Na poveznicama su dostupni projekti (Svi su dio ovog repozitorija):\
 [Mrežna aplikacija koja omogućuje REST API koristeći PHP kao programski jezik dok je pohrana podataka u MariaDB bazi podataka](https://github.com/tjakopec/DSN2020/tree/master/RESTAPI)\
+[Android Hello world aplikacija](https://github.com/tjakopec/DSN2020/tree/master/HelloWorld)\
 [Android aplikacija Osnovni pregled Android ekosustava s korištenje alata](https://github.com/tjakopec/DSN2020/tree/master/ALATI)\
 [Android aplikacija CRUD MVP](https://github.com/tjakopec/DSN2020/tree/master/MVPCRUD)\
 [Android aplikacija CRUD MVVM](https://github.com/tjakopec/DSN2020/tree/master/MVVMCRUD)
