@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tekst = findViewById(R.id.tvHello);
 
-        tekst.setText(getString(R.string.pozdrav));
+        tekst.setText("Programski pozdrav");
 
         Button gumb = findViewById(R.id.btnNovaAktinost);
         gumb.setOnClickListener(new View.OnClickListener() {
